@@ -81,3 +81,71 @@ read b
 result= [ $a != $b ]
 echo "Result: $result";
 
+
+
+# Relational Operators
+
+echo "Relational Operators Equality"
+a=10
+b=10
+if [ $a -eq $b ]
+then
+	echo "a and b equal"
+else
+	echo "a and b are not equal"
+fi
+
+
+echo "Relational Operators Not Equality"
+a=10
+b=12
+if [ $a -ne $b ]
+then
+	echo "a and b not equal"
+else
+	echo "a and b are equal"
+fi
+
+echo "Relational Operators Left Operand Greater Than"
+a=10
+b=8
+if [ $a -gt $b ]
+then
+	echo "a greater than b"
+else
+	echo "a less than b"
+fi
+
+echo "Relational Operators Left Operand Less Than"
+a=8
+b=10
+if [ $a -lt $b ]
+then
+	echo "a less than b"
+else
+	echo "a greater than b"
+fi
+
+echo "Relational Operators Left Operand Greater Than Or Equal To"
+a=10
+b=8
+if [ $a -ge $b ]
+then
+	echo "a equal b or greater than b"
+else
+	echo "a less than b"
+fi
+
+
+echo "Relational Operators Left Operand Less Than Or Equal To"
+a=9
+b=11
+if [ $a -le $b ]
+then
+	echo "a less b or greater than b"
+else
+	echo "a greater than b"
+fi
+
+
+# Boolean Operators
