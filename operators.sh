@@ -236,3 +236,77 @@ fi
 echo "----------------------"
 
 
+echo "File Operators"
+file="./arrays.sh"
+
+echo "----------------------"
+
+echo "Checks file is readable or not" 
+if [ -r $file ]
+then
+   echo "File has read access"
+else
+   echo "File does not have read access"
+fi
+
+echo "----------------------"
+
+echo "Checks file is writable or not"
+if [ -w $file ]
+then
+   echo "File has write permission"
+else
+   echo "File does not have write permission"
+fi
+
+echo "----------------------"
+
+echo "Checks file is executable or not"
+if [ -x $file ]
+then
+   echo "File has execute permission"
+else
+   echo "File does not have execute permission"
+fi
+
+echo "----------------------"
+
+echo "Checks file is ordinary or not"
+if [ -f $file ]
+then
+   echo "File is an ordinary file"
+else
+   echo "This is sepcial file"
+fi
+
+echo "----------------------"
+
+echo "Checks file is directory or not"
+if [ -d $file ]
+then
+   echo "File is a directory"
+else
+   echo "This is not a directory"
+fi
+
+echo "----------------------"
+
+echo "Checks file size is zero or not or not"
+if [ -s $file ]
+then
+   echo "File size is not zero"
+else
+   echo "File size is zero"
+fi
+
+echo "----------------------"
+
+echo "Checks file is exists or not"
+if [ -e $file ]
+then
+   echo "File exists"
+else
+   echo "File does not exist"
+fi
+
+echo "----------------------"
