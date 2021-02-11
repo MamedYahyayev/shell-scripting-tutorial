@@ -148,4 +148,42 @@ else
 fi
 
 
-# Boolean Operators
+# Boolean Operators ( ! (not) , -o (or) , -a (and) )
+
+echo "Not Operators"
+a=12
+b=22
+if [ $a != $b ]
+then
+	echo "a is not equal to b"
+else
+	echo "a is equal to b"
+fi
+echo "-----------------------"
+
+echo "Or Operators"
+a=12
+b=22
+if [ $a -gt $b -o $a -lt $b ]
+then
+	echo "a is equal or greater than b"
+else
+	echo "a is not equal or greater than b"
+fi
+echo "-----------------------"
+
+echo "And Operators"
+a=44
+b=22
+result=`expr $a / $b`
+if [ $a -gt $b -a $result -eq 2 ]
+then
+	echo "condition is true"
+else
+	echo "condition is false" 
+fi
+echo "-----------------------"
+
+
+
+
