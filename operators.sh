@@ -185,5 +185,54 @@ fi
 echo "-----------------------"
 
 
+# String Operators ( = , != ,  -z (length is zero) , -n (length is non-zero), str (isn't # empty)
+a="abc"
+b="cbd"
+
+echo "= operators"
+if [ $a = $b ]
+then
+	echo "a is equal to b"
+else
+	echo "a isn't equal to b"
+fi
+echo "----------------------"
+
+echo "!= operators"
+if [ $a != $b ]
+then
+	echo "a isn't equal to b"
+else
+	echo "a is equal to b"
+fi
+echo "----------------------"
+
+echo " -z operators"
+if [ -z $a ]
+then
+	echo "length of a is zero"
+else
+	echo "length of a is non zero"
+fi
+echo "----------------------"
+
+
+echo " -n operators"
+if [ -n $a ]
+then
+	echo "length of a is non-zero"
+else
+	echo "length of a is zero"
+fi
+echo "----------------------"
+
+echo "str operators"
+if [ $a ]
+then
+	echo "a isn't empty"
+else
+	echo "a is empty"
+fi
+echo "----------------------"
 
 
