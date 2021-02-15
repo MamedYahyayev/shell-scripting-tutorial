@@ -17,3 +17,10 @@ do
 	echo $a
 	a=`expr $a + 1`
 done
+
+
+# for loop
+for var in "Qasim" "Samir" "Zakir" "Cabbar" "Arif"
+do
+	echo $var
+done
