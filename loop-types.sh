@@ -34,3 +34,25 @@ do
 	echo $a
 	a=`expr $a + 1`
 done
+
+
+
+# select loop
+PS3="Choose drink: "
+options=(tea cofee water juice apple all none)
+select DRINK in "${options[@]}";
+do
+	case $DRINK in
+	   tea|cofee|water|all)
+		echo "Go to canteen"
+		;;
+	   juice|apple)
+		echo "Avaliable at home"
+		;;
+	   none)
+		break
+	   ;;
+	*) echo "Error: Invalid Selection"
+	esac
+done
+	   
