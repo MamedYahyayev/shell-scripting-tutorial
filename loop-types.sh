@@ -24,3 +24,13 @@ for var in "Qasim" "Samir" "Zakir" "Cabbar" "Arif"
 do
 	echo $var
 done
+
+
+# until loop -- this loop executes as long as expression is false
+a=0
+
+until [ ! $a -lt 10 ]
+do
+	echo $a
+	a=`expr $a + 1`
+done
