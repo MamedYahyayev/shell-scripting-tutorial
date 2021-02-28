@@ -21,3 +21,21 @@ echo $USER_NAME
 
 # above command prints nothing because variable is unset
 
+
+# Declare environment variables
+
+# declare keyword 
+declare -x student="Samir"
+echo $student
+
+# export keyword
+export student1="Qasim"
+echo $student1
+
+# to print environment variable without adding $ sign front of the variable
+printenv student1
+
+
+# unset keyword ( remove value from key )
+unset student1
+echo $student1 # print nothing
